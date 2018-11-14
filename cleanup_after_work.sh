@@ -1,13 +1,7 @@
 #!/bin/bash
 
 
-#yeyeyeye clean the shit out of it!
-#mv this file to the /bin/ directory in order to make it a global script that can be called from anywhere.
-#or add it in your .bashrc file
-
-
-echo -n "Enter your username: "
-read username
+USERNAME=$(whoami)
 
 srm -v -f /home/$username/.bash_history
 srm -v -f /home/$username/hydra.restore
